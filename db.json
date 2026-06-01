@@ -1,0 +1,214 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@wtsg.local",
+      "phone": "806-000-0000",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Burgers",
+      "slug": "burgers",
+      "icon": "\ud83c\udf54",
+      "sort_order": 1
+    },
+    {
+      "id": 2,
+      "name": "Cocktails",
+      "slug": "cocktails",
+      "icon": "\ud83c\udf78",
+      "sort_order": 2
+    },
+    {
+      "id": 3,
+      "name": "Appetizers",
+      "slug": "appetizers",
+      "icon": "\ud83c\udf64",
+      "sort_order": 3
+    },
+    {
+      "id": 4,
+      "name": "Sides",
+      "slug": "sides",
+      "icon": "\ud83e\udd57",
+      "sort_order": 4
+    },
+    {
+      "id": 5,
+      "name": "Desserts",
+      "slug": "desserts",
+      "icon": "\ud83c\udf70",
+      "sort_order": 5
+    }
+  ],
+  "menu_items": [
+    {
+      "id": 1,
+      "name": "West Texas Burger",
+      "description": "Juicy beef patty, smoked cheddar, lettuce, pickles, and house sauce.",
+      "price": 13.95,
+      "calories": 780,
+      "category_id": 1,
+      "is_featured": true,
+      "is_popular": true,
+      "is_spicy": false,
+      "is_available": true,
+      "allergens": "gluten, dairy"
+    },
+    {
+      "id": 2,
+      "name": "Jalape\u00f1o Popper Burger",
+      "description": "Spicy cheddar, crispy jalape\u00f1os, and chipotle mayo on a toasted bun.",
+      "price": 14.95,
+      "calories": 820,
+      "category_id": 1,
+      "is_featured": true,
+      "is_popular": true,
+      "is_spicy": true,
+      "is_available": true,
+      "allergens": "gluten, dairy"
+    },
+    {
+      "id": 3,
+      "name": "Lemon Drop Martini",
+      "description": "Tart, sweet, and perfectly chilled with a citrus sugar rim.",
+      "price": 12.5,
+      "calories": 220,
+      "category_id": 2,
+      "is_featured": true,
+      "is_popular": true,
+      "is_spicy": false,
+      "is_available": true,
+      "allergens": "sulfites"
+    },
+    {
+      "id": 4,
+      "name": "Loaded Nachos",
+      "description": "Crispy chips, queso, pico, jalape\u00f1os, and sour cream.",
+      "price": 10.5,
+      "calories": 680,
+      "category_id": 3,
+      "is_featured": false,
+      "is_popular": true,
+      "is_spicy": true,
+      "is_available": true,
+      "allergens": "dairy"
+    },
+    {
+      "id": 5,
+      "name": "Crispy Fries",
+      "description": "Golden fries tossed in house seasoning.",
+      "price": 4.95,
+      "calories": 430,
+      "category_id": 4,
+      "is_featured": false,
+      "is_popular": true,
+      "is_spicy": false,
+      "is_available": true,
+      "allergens": ""
+    },
+    {
+      "id": 6,
+      "name": "Choco-Taco Sundae",
+      "description": "Chocolate shell, vanilla cream, caramel, and candied pecans.",
+      "price": 7.5,
+      "calories": 540,
+      "category_id": 5,
+      "is_featured": false,
+      "is_popular": false,
+      "is_spicy": false,
+      "is_available": true,
+      "allergens": "nuts, dairy"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "order_type": "dine_in",
+      "items": [
+        {
+          "menu_item_id": 1,
+          "name": "West Texas Burger",
+          "quantity": 1,
+          "price": 13.95
+        },
+        {
+          "menu_item_id": 2,
+          "name": "Jalape\u00f1o Popper Burger",
+          "quantity": 1,
+          "price": 14.95
+        }
+      ],
+      "special_instructions": null,
+      "delivery_address": null,
+      "guest_name": "esxcj",
+      "guest_email": "",
+      "guest_phone": "234567878989",
+      "status": "pending",
+      "total": 31.28,
+      "tax": 2.38,
+      "delivery_fee": 0.0,
+      "created_at": "2026-06-01T10:34:55.222831",
+      "estimated_time": 15
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Jordan",
+      "title": "Amazing food",
+      "body": "The burger was juicy and the service was fast.",
+      "rating": 5,
+      "created_at": "2026-05-28T19:22:00",
+      "approved": true
+    },
+    {
+      "id": 2,
+      "name": "Maddie",
+      "title": "Great vibes",
+      "body": "Loved the live music and the margarita was perfect.",
+      "rating": 5,
+      "created_at": "2026-05-26T17:10:00",
+      "approved": true
+    },
+    {
+      "id": 3,
+      "name": "Chris",
+      "title": "Perfect spot",
+      "body": "Awesome atmosphere for game night. Highly recommend.",
+      "rating": 4,
+      "created_at": "2026-05-24T20:05:00",
+      "approved": true
+    },
+    {
+      "name": "nn",
+      "title": "nn",
+      "body": "jj",
+      "rating": 3,
+      "id": 4,
+      "approved": false,
+      "created_at": "2026-06-01T10:33:59.996356"
+    }
+  ],
+  "reservations": [],
+  "settings": {
+    "hero_image": null,
+    "photo_strip_1": null,
+    "photo_strip_2": null,
+    "photo_strip_3": null,
+    "menu_bg_image": null,
+    "cocktail_banner_image": null
+  },
+  "next_ids": {
+    "menu_item": 7,
+    "order": 2,
+    "review": 5,
+    "reservation": 1,
+    "user": 2
+  }
+}
