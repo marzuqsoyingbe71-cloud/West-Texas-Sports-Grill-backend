@@ -28,9 +28,9 @@ app.add_middleware(
 )
 app.mount("/static", StaticFiles(directory=BASE_DIR / "static"), name="static")
 
-@app.get("/", response_class=FileResponse)
-async def serve_site():
-    return FileResponse(Path(BASE_DIR.parent / "westnew.html"))
+@app.get("/")
+async def root():
+    return {"message": "West Texas Sports Grill API", "status": "running"}
 
 db_lock = Lock()
 active_tokens: Dict[str, int] = {}
